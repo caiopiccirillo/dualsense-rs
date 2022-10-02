@@ -1,0 +1,15 @@
+[package]
+name = "dualsense"
+version = "0.1.0"
+edition = "2021"
+description = "Read Dualsense controller data by using hidapi"
+keywords = ["dualsense", "playstation"]
+categories = ["hardware-support"]
+authors = ["Caio Piccirillo <caiopiccirillo@gmail.com>"]
+readme="README.md"
+license = "MIT"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+hidapi = "1.4.2"
