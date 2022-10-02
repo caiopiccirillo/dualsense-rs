@@ -16,10 +16,10 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Install jq tool
+    - name: Install dependencies
       run: |
           sudo apt-get update
-          sudo apt-get install libusb-1.0-0-dev libhid-dev
+          sudo apt-get install libusb-1.0-0-dev libhidapi-dev
     - name: Build
       run: cargo build --verbose
     - name: Run tests
